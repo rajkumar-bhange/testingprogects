@@ -27,7 +27,7 @@ test('actions',async({page})=>{
    
     await page.goto('https://gotranscript.com/text-compare')
     await page.locator('//textarea[@name="text1"]').fill('rajkumar')
-    await page.keyboard.press('Control+A')
+    await page.keyboard.press('Control+A')//copy the element
     await page.keyboard.press('Control+C')
     await page.keyboard.press('Tab')
     await page.keyboard.press('Control+V')

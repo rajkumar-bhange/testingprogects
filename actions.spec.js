@@ -39,7 +39,8 @@ test('actions',async({page})=>{
 
 test('mouse hover',async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/')
-    await page.locator('//button[@class="dropbtn"]').hover();
+    await page.locator('//button[@class="dropbtn"]').hover('Laptops');
+    
     await page.pause();
 })
 
@@ -66,7 +67,7 @@ test('grag and deop',async({page})=>{
 })
 
 test.only('mouse scroling',async({page})=>{
-     await page.setViewportSize({width:360,height:768});
+ await page.setViewportSize({width:360,height:768});
 await page.goto('https://testautomationpractice.blogspot.com/')
 await page.mouse.wheel(0,3000)
 await page.mouse.wheel(-3000,0)
